@@ -1,0 +1,217 @@
+/* ── Reset & Base ─────────────────────────────────── */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                 Helvetica, Arial, sans-serif;
+    color: #1a1a2e;
+    line-height: 1.7;
+    background: #ffffff;
+}
+
+a {
+    color: #3B4FBF;
+    text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+.container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* ── Header ───────────────────────────────────────── */
+header {
+    background: #1a1a2e;
+    color: #ffffff;
+    padding: 4rem 0 3rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 0.5rem;
+}
+
+.tagline {
+    color: #a0aec0;
+    font-size: 1.05rem;
+    margin-bottom: 1.5rem;
+}
+
+.header-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.header-links a {
+    color: #ffffff;
+    border: 1px solid rgba(255,255,255,0.3);
+    padding: 0.4rem 1.2rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+
+.header-links a:hover {
+    background: rgba(255,255,255,0.1);
+    text-decoration: none;
+}
+
+/* ── Sections ─────────────────────────────────────── */
+section {
+    padding: 3.5rem 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+section:last-of-type { border-bottom: none; }
+
+h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #3B4FBF;
+    display: inline-block;
+}
+
+section p {
+    color: #444;
+    margin-bottom: 1rem;
+    max-width: 680px;
+}
+
+/* ── Skills ───────────────────────────────────────── */
+.skills-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.skill-category h3 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #888;
+    margin-bottom: 0.5rem;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag {
+    background: #f0f4ff;
+    color: #3B4FBF;
+    padding: 0.3rem 0.85rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+/* ── Projects ─────────────────────────────────────── */
+#projects { padding-bottom: 4rem; }
+
+.project-card {
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    transition: box-shadow 0.2s;
+}
+
+.project-card:hover {
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+
+.project-card.coming {
+    background: #fafafa;
+    opacity: 0.75;
+}
+
+.project-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+}
+
+.project-header h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.project-status {
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.2rem 0.7rem;
+    border-radius: 20px;
+}
+
+.project-status.live     { background: #d4edda; color: #155724; }
+.project-status.built    { background: #d0e8ff; color: #0a4a8a; }
+.project-status.upcoming { background: #f5f5f5; color: #888; }
+
+.project-card p {
+    font-size: 0.93rem;
+    color: #555;
+    margin-bottom: 0.85rem;
+}
+
+.project-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 0.85rem;
+}
+
+.stack-item {
+    background: #f5f5f5;
+    color: #444;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-family: monospace;
+}
+
+.project-link {
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+/* ── Education ────────────────────────────────────── */
+.edu-item { padding: 0.25rem 0; }
+
+.edu-degree {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.edu-school {
+    color: #666;
+    font-size: 0.93rem;
+}
+
+/* ── Footer ───────────────────────────────────────── */
+footer {
+    background: #f9f9f9;
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #999;
+    border-top: 1px solid #eee;
+}
+
+footer a { color: #888; }
