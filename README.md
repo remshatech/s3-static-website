@@ -75,8 +75,9 @@ aws s3 cp style.css s3://remsha-portfolio-2026/
 
 ## Tech Stack
 
-AWS S3 · HTML · CSS · AWS CLI
+AWS S3 · IAM bucket policy · HTML · CSS · AWS CLI
 
 ---
+
 
 *September 2026*
