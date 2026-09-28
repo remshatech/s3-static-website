@@ -65,6 +65,7 @@ aws s3api put-bucket-policy --bucket remsha-portfolio-2026 --policy file://bucke
 ```
 aws s3 cp index.html s3://remsha-portfolio-2026/
 aws s3 cp style.css s3://remsha-portfolio-2026/
+```
 
 1. Set public access on the bucket using `aws s3api put-public-access-block` with all four block settings set to false.
 
