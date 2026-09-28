@@ -72,6 +72,7 @@ aws s3 cp style.css s3://remsha-portfolio-2026/
 
 3. Upload files with `aws s3 cp index.html s3://remsha-portfolio-2026/` and `aws s3 cp style.css s3://remsha-portfolio-2026/`.
 
+
 ## Tech Stack
 
 AWS S3 · HTML · CSS · AWS CLI
